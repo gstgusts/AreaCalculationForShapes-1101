@@ -20,6 +20,13 @@ public class Main {
         for (var shape :
                 shapes) {
             System.out.println(shape.getArea());
+
+            if(shape.getClass() == Rectangle.class) {
+                var rec = (Rectangle)shape; // Object
+            } else if (shape.getClass() == Circle.class) {
+                var ci = (Circle)shape;
+            }
+
         }
 
         Shape sh1 = new Circle(2);
